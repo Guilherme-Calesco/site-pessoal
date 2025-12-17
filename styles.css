@@ -330,7 +330,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 72px;
+    height: 88px;
 }
 
 /* Logo */
@@ -340,7 +340,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo-img {
-    height: 52px;
+    height: 72px;
     width: auto;
     object-fit: contain;
 }
@@ -407,7 +407,7 @@ h1, h2, h3, h4, h5, h6 {
    ========================================================================== */
 .hero {
     position: relative;
-    padding: calc(72px + var(--space-20)) 0 var(--space-24);
+    padding: calc(88px + var(--space-20)) 0 var(--space-24);
     overflow: hidden;
     min-height: 90vh;
     display: flex;
@@ -1135,10 +1135,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-logo {
-    height: 48px;
+    height: 64px;
     width: auto;
     object-fit: contain;
-    margin-bottom: var(--space-3);
+    margin-bottom: var(--space-4);
     filter: brightness(0) invert(1);
 }
 
