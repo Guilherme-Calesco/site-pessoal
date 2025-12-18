@@ -326,23 +326,23 @@
         const challenge = fields.challenge.element.value.trim();
         const budget = document.getElementById('budget')?.value || 'Não informado';
 
-        // Build mailto URL as fallback
-        const subject = encodeURIComponent(`[Calesco] Contato de ${name} - ${company}`);
-        const body = encodeURIComponent(
-            `Nome: ${name}\n` +
-            `Email: ${email}\n` +
-            `Empresa: ${company}\n` +
-            `Faixa de Investimento: ${budget}\n\n` +
-            `Desafio/Objetivo:\n${challenge}`
+        // Build WhatsApp message
+        const message = encodeURIComponent(
+            `*Novo contato via site*\n\n` +
+            `*Nome:* ${name}\n` +
+            `*Email:* ${email}\n` +
+            `*Empresa:* ${company}\n` +
+            `*Faixa de Investimento:* ${budget}\n\n` +
+            `*Desafio/Objetivo:*\n${challenge}`
         );
 
-        const mailtoUrl = `mailto:guilherme.carod@gmail.com?subject=${subject}&body=${body}`;
+        const whatsappUrl = `https://wa.me/5514991820558?text=${message}`;
 
-        // Try to open mailto
-        window.location.href = mailtoUrl;
+        // Open WhatsApp
+        window.open(whatsappUrl, '_blank');
 
         // Show success message
-        showToast('Redirecionando para seu cliente de email...', 'success');
+        showToast('Redirecionando para o WhatsApp...', 'success');
 
         // Reset form after short delay
         setTimeout(() => {
