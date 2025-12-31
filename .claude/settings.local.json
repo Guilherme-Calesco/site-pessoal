@@ -5,7 +5,10 @@
       "Bash(findstr:*)",
       "Bash(git add:*)",
       "Bash(git commit:*)",
-      "Bash(dir /b \"C:\\\\Users\\\\guilh\\\\git\\\\gcalesco\")"
+      "Bash(dir /b \"C:\\\\Users\\\\guilh\\\\git\\\\gcalesco\")",
+      "Bash(cat:*)",
+      "Bash(git push:*)",
+      "Bash(node -e:*)"
     ]
   }
 }
