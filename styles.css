@@ -858,6 +858,12 @@ h6 {
     transform: scale(1.05);
 }
 
+.project-card-miaza .project-logo {
+    filter: none;
+    max-height: 80px;
+    border-radius: var(--radius-lg);
+}
+
 .project-logo-placeholder {
     width: 80px;
     height: 80px;
